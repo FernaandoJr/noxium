@@ -1,12 +1,11 @@
 {
 	"name": "noxium",
 	"version": "1.0.0",
-	"main": "index.js",
+	"main": "dist/index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
 		"dev": "tsx watch src/index.ts",
-		"start": "node dist/index.js",
-		"build": "tsup src/index.ts --minify"
+		"start": "node .",
+		"build": "tsc"
 	},
 	"keywords": [],
 	"author": "",
@@ -14,7 +13,8 @@
 	"description": "",
 	"dependencies": {
 		"discord.js": "^14.19.3",
-		"dotenv": "^16.5.0"
+		"dotenv": "^16.5.0",
+		"mongoose": "^8.14.1"
 	},
 	"devDependencies": {
 		"@types/node": "^22.15.15",
