@@ -31,11 +31,7 @@ const ping: Command = {
         field2_value: `${ping}ms`,
 
         field3_name: "Tempo Ativo:",
-        field3_value: `Eu estou ativo à 
-						${days > 0 ? `${days} ${days === 1 ? "Dia" : "Dias"} ` : ""}
-						${hours > 0 ? `${hours} ${hours === 1 ? "Hora" : "Horas"} ` : ""}
-						${minutes > 0 ? `${minutes} ${minutes === 1 ? "Minuto" : "Minutos"} ` : ""}
-						${seconds > 0 ? `${seconds} ${seconds === 1 ? "Segundo" : "Segundos"} ` : ""}`.trim(),
+        field3_value: `Eu estou ativo à ${days > 0 ? `${days} ${days === 1 ? "Dia" : "Dias"} ` : ""}${hours > 0 ? `${hours} ${hours === 1 ? "Hora" : "Horas"} ` : ""}	${minutes > 0 ? `${minutes} ${minutes === 1 ? "Minuto" : "Minutos"} ` : ""} ${seconds > 0 ? `${seconds} ${seconds === 1 ? "Segundo" : "Segundos"} ` : ""}`.trim(),
       }
     } else {
       correctLocale = {
@@ -46,11 +42,7 @@ const ping: Command = {
         field2_value: `${ping}ms`,
 
         field3_name: "Uptime:",
-        field3_value: `My uptime is 
-						${days > 0 ? `${days} ${days === 1 ? "Day" : "Days"} ` : ""} 
-						${hours > 0 ? `${hours} ${hours === 1 ? "Hour" : "Hours"} ` : ""} 
-						${minutes > 0 ? `${minutes} ${minutes === 1 ? "Minute" : "Minutes"} ` : ""} 
-						${seconds > 0 ? `${seconds} ${seconds === 1 ? "Second" : "Seconds"} ` : ""}`.trim(),
+        field3_value: `My uptime is ${days > 0 ? `${days} ${days === 1 ? "Day" : "Days"} ` : ""} ${hours > 0 ? `${hours} ${hours === 1 ? "Hour" : "Hours"} ` : ""} ${minutes > 0 ? `${minutes} ${minutes === 1 ? "Minute" : "Minutes"} ` : ""} ${seconds > 0 ? `${seconds} ${seconds === 1 ? "Second" : "Seconds"} ` : ""}`.trim(),
       }
     }
 
